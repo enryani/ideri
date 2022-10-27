@@ -2,7 +2,7 @@ import {
   BaseEntity,
   Column,
   Entity,
-  OneToMany,
+  ManyToMany,
   PrimaryGeneratedColumn,
 } from "typeorm";
 import { Album } from "./Album";
@@ -18,6 +18,6 @@ export class Genre extends BaseEntity {
   @Column({ type: "text" })
   description: string;
 
-  @OneToMany(() => Album, (album) => album.genre)
+  @ManyToMany(() => Album, (album) => album.genres)
   albums: Album[];
 }

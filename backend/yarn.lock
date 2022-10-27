@@ -736,6 +736,11 @@ negotiator@0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
+nestjs-typeorm-paginate@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/nestjs-typeorm-paginate/-/nestjs-typeorm-paginate-4.0.2.tgz#8c4bb25d801574210832db0c8292318e5b9beee7"
+  integrity sha512-9rUXFy3A2BKeWkGwP2aDB4KNQrJsTSNzmVyMW+N07tWhzqcrRiEaJNDxmfT/eiN53A/AVHQTeTucJ/f5iqYZPQ==
+
 nodemon@^2.0.20:
   version "2.0.20"
   resolved "https://registry.yarnpkg.com/nodemon/-/nodemon-2.0.20.tgz#e3537de768a492e8d74da5c5813cb0c7486fc701"

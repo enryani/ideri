@@ -3,8 +3,8 @@ import {
   BaseEntity,
   PrimaryGeneratedColumn,
   Column,
-  ManyToOne,
-  JoinColumn,
+  ManyToMany,
+  JoinTable,
 } from "typeorm";
 import { Genre } from "./Genre";
 
@@ -22,10 +22,7 @@ export class Album extends BaseEntity {
   @Column()
   cover: string;
 
-  @JoinColumn()
-  @ManyToOne(() => Genre, (genre) => genre.albums, { eager: true })
-  genre?: Genre;
-
-  @Column()
-  genreId: string;
+  @JoinTable()
+  @ManyToMany(() => Genre, (genre) => genre.albums, { eager: true })
+  genres?: Genre[];
 }
