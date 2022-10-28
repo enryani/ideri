@@ -17,4 +17,10 @@ genreRouter.post("/", async (request, response) => {
   return response.json(genre);
 });
 
+genreRouter.get("/", async (_, response) => {
+  const genres = await Genre.find();
+
+  return response.json(genres);
+});
+
 export default genreRouter;
